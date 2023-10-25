@@ -1,0 +1,84 @@
+.promo_section{
+    position: relative;
+}
+.promo{
+    padding: 222px 0px 80px 80px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.promo_title{
+    color: #2E2E2E;
+    font-weight: 900;
+    line-height: 100%;
+}
+
+.promo_title span{
+    width: fit-content;
+    display: block;
+    padding: 10px 27px;
+}
+.promo_title .green{
+    color: var(--main-color);
+    display: block;
+    background: url('../assets/icons/Rectangle\ 4.png') no-repeat 100%/100% ; 
+    padding-bottom: 0;
+
+}
+
+.promo_title .black{
+    background: url('../assets/icons/Rectangle\ 5.png') no-repeat 100%/100% ;
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.promo_text{
+    font-size: calc(19px + (32 - 19) * (100vw  / 1200));
+    color: #fff;
+    margin-top: 20px;
+}
+
+.promo_btn{
+    width: 236px;
+    padding: 15px 45px;
+    margin: 22px 0px  0px;
+    font-size: 17px;
+}
+
+.promo_section .swiper-button-next,
+.promo_section .swiper-button-prev{
+    width: calc(var(--swiper-navigation-size)/ 165 * 27);
+}
+
+@media (max-width: 875px){
+    .promo_section .swiper-button-next,
+    .promo_section .swiper-button-prev{
+        display: none;
+    }
+    .promo{
+        padding: 112px 20px 127px;
+        background-position: 70% center;
+    }
+    .promo_title span{
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 350px){
+    .promo{
+        padding: 112px 10px 127px;
+    }
+    .promo_title{
+        line-height: 85%;
+    }
+    .promo_title span{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .promo_btn{
+        width: 164px;
+        padding: 11px 17px;
+    }
+}
