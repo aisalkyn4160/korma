@@ -1,5 +1,8 @@
 .partners_section{
     position: relative;
+    max-width: 1330px;
+    /* width: 90%; */
+    margin: 0 auto;
 }
 .partners{
     padding: 30px;
@@ -28,11 +31,6 @@
     padding-bottom: 50px;
 }
 
-/* .partners_section .swiper-button-next, 
-.partners_section .swiper-button-prev {
-    width: calc(var(--swiper-navigation-size)/ 8 * 27);
-} */
-
 @media (max-width: 950px){
     .partners_items{
         flex-wrap: wrap;
@@ -41,7 +39,7 @@
     }
 
     .partner_item{
-       width: 48%;
+       width: 47%;
     }
     .partners_section .swiper-button-next:after, 
     .partners_section .swiper-button-prev:after {

@@ -14,6 +14,7 @@
                 <div class="burger_btn">
                     <span></span>
                 </div>
+                <div class="dropdown_bg"></div>
                 <ul class="nav_menu">
                     <li><a href="product.html">Продукция</a></li>
                     <li ><a class="active" href="about.html">О компании</a></li>
@@ -46,9 +47,11 @@
             </div>
         </div>
     </header>
-    <main class="container">
-        <a class="menu_btn" href="index.html">Главная</a>
-        <a class="menu_btn menu_btn-active" href="about.html">О компании</a>
+    <main>
+        <div class="about_menu container">
+            <a class="menu_btn" href="index.html">Главная</a>
+            <a class="menu_btn menu_btn-active" href="about.html">О компании</a>
+        </div>
         <section class="about container">
             <h3 class="about_title">О компании</h3>
             <div class="about_wrapper">
@@ -85,7 +88,7 @@
                 </ul>
             </div>           
         </section>
-        <section class="services">
+        <section class="services container">
             <h3>Услуги</h3>
             <div class="mobile_swiper">
                 <div class="services_cards swiper-wrapper">
@@ -116,7 +119,7 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts container">
             <h3>Контакты</h3>
             <div class="contacts_wrapper">
                 <div class="contacts_list">
@@ -134,22 +137,24 @@
                     </a>
                 </div>
                 <div class="map">
-                    <img src="./assets/imgs/Group 136.jpg" alt="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A585e1e5f3092069e0fc5bf42940dbaa4874603a45700add99e61b8c1e74742d9&amp;source=constructor" width="780" height="361" frameborder="0"></iframe>
                 </div> 
             </div>
         </section>
-        <section class="request_form">
-            <div class="context">
-                <h3 class="request_form_title">Получить консультацию</h3>
-                <p>Оставьте заявку</p>
-            </div>
-            <form class="form">
-                <input type="text" placeholder="Имя">
-                <input type="tel" placeholder="Телефон">
-                <input type="email" placeholder="E-mail">
-                <button>Оставить заявку</button>
-            </form>
-        </section>
+        <div class="container">
+            <section class="request_form">
+                <div class="context">
+                    <h3 class="request_form_title">Получить консультацию</h3>
+                    <p>Оставьте заявку</p>
+                </div>
+                <form class="form">
+                    <input type="text" placeholder="Имя">
+                    <input type="tel" placeholder="Телефон">
+                    <input type="email" placeholder="E-mail">
+                    <button>Оставить заявку</button>
+                </form>
+            </section>
+        </div>
     </main>
     <footer class="footer">
         <div class="container">

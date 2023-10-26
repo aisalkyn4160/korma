@@ -1,16 +1,15 @@
 let header = document.querySelector('.header')
       headerHeight = document.querySelector('.header').clientHeight
-     
-
+let dropdownDiv = document.querySelector('.dropdown_bg')
 document.onscroll = function() {
     let scrollY = window.scrollY
-    // let scrollX = window.scrollX
-
 
     if (scrollY > headerHeight) {
         header.classList.add('scroll_header')
+        // document.body.style.paddingTop = headerHeight + 'px'
     } else{
         header.classList.remove('scroll_header')
+        // document.body.removeAttribute('style')
     }
 }
 
@@ -19,6 +18,7 @@ let menu = document.querySelector('.nav_menu')
 burger.onclick = function(){
     burger.classList.toggle('toggle')
     menu.classList.toggle('open')
+    dropdownDiv.classList.toggle('bg_open')
 }
 
 const swiper = new Swiper('.swiper', {
@@ -40,8 +40,9 @@ const mobileSwiper = new Swiper('.mobile_swiper', {
             slidesPerView: 2.5,
         },
         1024: {
-            slidesPerView: 4,
+            slidesPerView: 4.2,
         }
-    }
+    },
+    slidesPerGroup: 2,
   });
 

@@ -3,10 +3,17 @@
     padding: 50px 0 150px;
 }
 
+.footer .logo{
+    width: 111px;
+    height: 120px;
+}
+.footer .logo img{
+    width: 100%;
+}
 .footer .container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footer .nav_menu{
@@ -18,7 +25,8 @@
 .footer .contacts_list{
     width: 65%;
     justify-content: space-between;
-    row-gap: 10px;
+    row-gap: 20px;
+    padding: 0;
 }
 .footer .contacts_list .kontur::before{
     background-image: url('../assets/icons/logo_KONTUR.png');
@@ -82,18 +90,38 @@
 
     .footer .nav_menu{
         order: 3;
+        gap: 22px;
     }
-
+    .footer .contacts_list{
+        row-gap: 10px;
+    }
+    .footer .contacts_list a{
+        gap: 10px;
+    }
     .footer .contacts_list .phone{
+        width: 130px;
+        padding: 11px 16px;
+        font-size: 14px;
         position: absolute;
         top: 15px;
-        right: 15px;
+        right: 30px;
     }
 
+    .footer .contacts_list .whatsapp{
+        white-space: nowrap !important; 
+        order: -1;
+    }
+
+    .footer .contacts_list .geo{
+        order: 5;
+        align-items: flex-start;
+    }
     .footer .contacts_list .kontur{
         position: absolute;
         bottom: -70px;
         right: 40px;
+        font-weight: 300;
+        line-height: 20px;
     }
 }
     

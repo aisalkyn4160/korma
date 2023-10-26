@@ -2,12 +2,17 @@
     padding: 20px 0px;
     background: #FFF;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03), 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
+    /* top: -100px;
+    left: 0;
+    z-index: 10;
+    transition: all 0.5s ease; */
 }
 
 .header .container {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
     position: relative;
 }
@@ -42,7 +47,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    column-gap: calc(3px + (29 - 15) * (100vw  / 1200));
+    padding: 20px 0;
 }
 
 .contacts_list button{
@@ -61,6 +67,7 @@
 
 .contacts_list p{
     font-weight: normal;
+    line-height: normal;
 }
 
 .contacts_list a span{
@@ -85,10 +92,18 @@
 }
 .scroll_header{
     width: 100%;
+    /* height: 92px; */
+    height: calc(80px + (92 - 80) * (100vw  / 1200));
+    padding-top: 7px;
+    align-items: center;
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
+    /* top: -92px; */
+    top: calc((80px + (92 - 80) * (100vw  / 1200))*-1);
+    transform: translateY(100%);
+    transition: transform 0.5s ease 0s;
+    z-index: 20;
+    /* position: fixed;
+    transform: translateY(100px); */
 }
 .scroll_header .logo{
     display: none;
@@ -104,6 +119,8 @@
 }
 .scroll_header .contacts_list .phone{
     order: 4;
+    position: absolute;
+    right: 20px;
 }
 
 .burger_btn{
@@ -152,13 +169,21 @@
     bottom: 50%;
 }
 
-.open{
-    flex-direction: column;
-    background: #f8f8f8;
-    padding: 150px 0px;
+.bg_open{
     width: 100vw;
     height: 100vh;
     position: fixed;
+    top: 0;
+    left: 0;
+    background: #f8f8f8;
+    z-index: 99;
+}
+.open{
+    flex-direction: column;
+    padding: 150px 0px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 100;
@@ -173,7 +198,7 @@
     }
     .header .contacts_list{
         width: 33%;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
     .header .contacts_list p{
         display: none;
@@ -181,17 +206,24 @@
     .header .contacts_list .phone{
         order: 4;
     }
+
+    .scroll_header .contacts_list {
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: 1130px){
-    .contacts_list{
+    header .contacts_list{
         width: 40%;
-        justify-content: flex-end;
+    }
+
+    .header .scroll_header .contacts_list{
+        justify-content: unsafe;
     }
     
 }
 
-@media (max-width: 875px){
+@media (max-width: 1040px){
     .header .container{
         gap: 15px;
     }
@@ -207,12 +239,12 @@
    }
    .logo_onscroll img{
     width: 100%;
-    height: 100%;
    }
     .header .contacts_list{
        flex-wrap: nowrap;
        width: 140px;
        gap: 10px;
+       padding: 0;
    }
    .header .contacts_list .geo{
     display: none;
@@ -230,4 +262,16 @@
    .open.nav_menu{
     display: block;
    }
+
+   .scroll_header {
+       display: flex;
+   }
+}
+
+@media (max-width: 355px){
+    .nav_wrapper{
+        gap: 0;
+    }
+
+    
 }

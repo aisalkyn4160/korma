@@ -37,3 +37,7 @@
     background-color: #FFB05C;
     color: #FFF;
 }
+
+.services h3{
+    font-size: calc(22px + (30 - 22) * (100vw  / 1200));
+}

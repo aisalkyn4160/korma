@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header scroll_header">
         <div class="container">
             <div class="nav_wrapper">
                 <div class="burger_btn">
                     <span></span>
                 </div>
+                <div class="dropdown_bg"></div>
                 <ul class="nav_menu">
                     <li><a href="product.html">Продукция</a></li>
                     <li><a href="about.html">О компании</a></li>
@@ -113,76 +114,77 @@
             </div>           
         </section>
         <section class="partners_section">
-            <div class="partners container">
+            <div class="container">
+            <div class="partners">
                 <h3 class="partners_title">Наши партнеры</h3>
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="partners_items swiper-slide">
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-1.png" alt="partner1">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="partners_items swiper-slide">
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-1.png" alt="partner1">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-2.png" alt="partner2">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-3.png" alt="partner3">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-4.png" alt="partner4">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-5.png" alt="partner5">
+                            </div>
                         </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-2.png" alt="partner2">
+                        <div class="partners_items swiper-slide">
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-1.png" alt="partner1">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-2.png" alt="partner2">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-3.png" alt="partner3">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-4.png" alt="partner4">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-5.png" alt="partner5">
+                            </div>
                         </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-3.png" alt="partner3">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-4.png" alt="partner4">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-5.png" alt="partner5">
-                        </div>
+                        <div class="partners_items swiper-slide">
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-1.png" alt="partner1">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-2.png" alt="partner2">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-3.png" alt="partner3">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-4.png" alt="partner4">
+                            </div>
+                            <div class="partner_item">
+                                <img src="./assets/icons/partners-item-5.png" alt="partner5">
+                            </div>
+                        </div>  
                     </div>
-                    <div class="partners_items swiper-slide">
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-1.png" alt="partner1">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-2.png" alt="partner2">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-3.png" alt="partner3">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-4.png" alt="partner4">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-5.png" alt="partner5">
-                        </div>
-                    </div>
-                    <div class="partners_items swiper-slide">
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-1.png" alt="partner1">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-2.png" alt="partner2">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-3.png" alt="partner3">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-4.png" alt="partner4">
-                        </div>
-                        <div class="partner_item">
-                            <img src="./assets/icons/partners-item-5.png" alt="partner5">
-                        </div>
-                    </div>
-                
-                    
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-
             </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
         </section>
         <section class="news container">
-            <h3 class="news_title">Новости</h3>
-            <a href="#" class="news_btn">Смотреть все</a>
+            <div class="news_ttl_btn">
+                <h3 class="news_title">Новости</h3>
+                <a href="#" class="news_btn">Смотреть все</a>
+            </div>
             <div class="mobile_swiper">
                 <div class="news_wrapper swiper-wrapper">
                     <div class="news_item swiper-slide">
@@ -244,7 +246,7 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
             <div class="contacts_list">
-                <a href="#">
+                <a class="geo" href="#">
                     <img src="./assets/icons/geo-icon.svg" alt="location"> 
                     <p><span>г. Искитим</span> мн. Индустриальный <br>д.29Б, к. 5, пом. 1</p>
                 </a>
@@ -257,7 +259,7 @@
                     <img src="./assets/icons/whatsapp-icon.svg" alt="whatsapp">
                     <p>8 (38343) 3-56-74</p>
                 </a>
-                <a class="kontur" href="#">
+                <a class="kontur" href="https://kontur-lite.ru/">
                     <p>Создание сайтов <br>Продвижение сайтов</p>
                     <img src="./assets/icons/logo_KONTUR.png" alt="kontur">
                 </a>
