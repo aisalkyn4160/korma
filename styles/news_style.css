@@ -17,14 +17,10 @@
 }
 
 .news_wrapper{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 -5px;
     margin-top: 25px;
 }
 
 .news_item{
-    margin: 0 5px;
     display: flex;
     flex-direction: column;
 }

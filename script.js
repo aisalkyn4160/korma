@@ -43,6 +43,6 @@ const mobileSwiper = new Swiper('.mobile_swiper', {
             slidesPerView: 4.2,
         }
     },
-    slidesPerGroup: 2,
+    spaceBetween: 20,
   });
 

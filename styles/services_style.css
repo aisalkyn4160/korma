@@ -1,12 +1,8 @@
 .services{
     padding-bottom: 50px;
 }
-.services_cards{
-    display: flex;
-    gap: 20px;
-}
+
 .service_card{
-    width: 24%;
     background: #FFF;
     position: relative;
 }

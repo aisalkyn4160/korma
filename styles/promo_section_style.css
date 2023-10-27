@@ -11,7 +11,7 @@
 .promo_title{
     color: #2E2E2E;
     font-weight: 900;
-    line-height: 100%;
+    line-height: 92%;
 }
 
 .promo_title span{
@@ -44,8 +44,13 @@
     padding: 15px 45px;
     margin: 22px 0px  0px;
     font-size: 17px;
+    white-space: nowrap;
 }
 
+.promo_btn:hover{
+    box-shadow: 0px 1px 5px 1px rgba(9,1,1,0.65);
+    transition: all 0.5s ease
+}
 .promo_section .swiper-button-next,
 .promo_section .swiper-button-prev{
     width: calc(var(--swiper-navigation-size)/ 165 * 27);
@@ -80,5 +85,6 @@
     .promo_btn{
         width: 164px;
         padding: 11px 17px;
+        font-size: 15px;
     }
 }

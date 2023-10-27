@@ -17,7 +17,7 @@
 }
 
 .about_text p{
-    font-weight: 400;
+    font-weight: 300;
     line-height: normal;
 }
 .about_text p:nth-child(2){
@@ -56,9 +56,6 @@
    
     .about_list{
         width: 100%;
-    }
-    .about_list li{
-        /* width: 100%; */
     }
 }
 
