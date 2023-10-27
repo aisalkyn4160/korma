@@ -108,8 +108,11 @@
     }
 
     .footer .contacts_list .whatsapp{
-        white-space: nowrap !important; 
         order: -1;
+    }
+
+    .footer .contacts_list .whatsapp p{
+        white-space: nowrap;
     }
 
     .footer .contacts_list .geo{
