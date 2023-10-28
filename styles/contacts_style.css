@@ -28,14 +28,14 @@
     .contacts .contacts_list{
         margin-top: 20px;
     }
-
-    .contacts .map img{
-        /* width: calc(371px + (780 - 371) * (100vw  / 1000)); */
-        height: 450px;
-    }
 }
 @media (max-width: 785px){
-    /* .contacts .contacts_list{
+    .contacts{
+        padding-bottom: 40px;
+    }
+    .contacts .contacts_list{
         width: 100%;
-    } */
+        margin-top: 0;
+    }
+
 }

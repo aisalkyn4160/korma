@@ -2,10 +2,6 @@
     padding: 20px 0px;
     background: #FFF;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03), 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
-    /* top: -100px;
-    left: 0;
-    z-index: 10;
-    transition: all 0.5s ease; */
 }
 
 .header .container {
@@ -65,6 +61,7 @@
 .contacts_list p{
     font-weight: normal;
     line-height: normal;
+    font-size: 14px;
 }
 
 .contacts_list a span{
@@ -91,6 +88,19 @@
 .contacts_list .mobile{
     display: none;
 }
+
+.contacts_list .whatsapp{
+    white-space: nowrap !important;
+}
+.header .contacts_list .geo{
+    width: 60%;
+}
+.header .contacts_list .mail{
+    width: 40%;
+}
+.header .contacts_list .whatsapp{
+    width: 55%;
+}
 .scroll_header{
     width: 100%;
     height: calc(80px + (92 - 80) * (100vw  / 1200));
@@ -104,13 +114,15 @@
 }
 .scroll_header .logo{
     display: none;
-
 }
 
 .scroll_header .logo_onscroll{
     display: block;
 }
 
+.scroll_header .contacts_list{
+    flex-wrap: nowrap;
+}
 .scroll_header .contacts_list p{
     display: none;
 }
@@ -118,6 +130,12 @@
     order: 4;
     position: absolute;
     right: 20px;
+}
+.scroll_header .contacts_list .mail,
+.scroll_header .contacts_list .whatsapp,
+.scroll_header .contacts_list .geo{
+    width: 10%;
+    
 }
 
 .burger_btn{
@@ -166,28 +184,33 @@
     bottom: 50%;
 }
 
-.bg_open{
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #f8f8f8;
-    z-index: 99;
-}
-.open{
-    flex-direction: column;
-    padding: 150px 0px;
-    width: 100vw;
-    height: 100vh;
+.dropdown_menu{
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
+    background: #FFF;
+    top: 185px;
+    z-index: -10;
+    width: 40%;
+    min-width: 284px;
+    opacity: 0;
+    border-radius: 8px;
 }
-.open li{
+.dropdown_menu li{
     padding: 20px;
 }
+
+.dropdown_menu li:hover{
+    color: var(--main-color);
+}
+.open{
+    opacity: 1;
+    transition: opacity 0.3s ease 0s;
+    z-index: 100;
+}
+
+.scroll_header .dropdown_menu{
+    top: 100px;
+}
+
 @media (max-width: 1190px){
     .header .container{
         justify-content: space-between;
@@ -196,6 +219,7 @@
     .header .contacts_list{
         width: 33%;
         justify-content: flex-end;
+        gap: 20px;
     }
     .header .contacts_list p{
         display: none;
@@ -203,7 +227,11 @@
     .header .contacts_list .phone{
         order: 4;
     }
-
+    .header .contacts_list .mail,
+    .header .contacts_list .whatsapp,
+    .header .contacts_list .geo{
+        width: 10%;
+    }
     .scroll_header .contacts_list {
         justify-content: flex-start;
     }
@@ -239,6 +267,7 @@
    }
     .header .contacts_list{
        flex-wrap: nowrap;
+       justify-content: space-between;
        width: 140px;
        gap: 10px;
        padding: 0;
@@ -256,12 +285,12 @@
     order: 4;
    }
 
-   .open.nav_menu{
-    display: block;
-   }
-
    .scroll_header {
        display: flex;
+   }
+
+   .dropdown_menu{
+    top: 90px;
    }
 }
 
@@ -270,5 +299,8 @@
         gap: 0;
     }
 
+    .dropdown_menu{
+        top: 80px;
+    }
     
 }

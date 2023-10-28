@@ -1,6 +1,6 @@
 .footer{
     background-color: #FFF;
-    padding: 50px 0 150px;
+    padding: 50px 0 100px;
 }
 
 .footer .logo{
@@ -75,6 +75,9 @@
 }
 
 @media (max-width: 550px){
+    .footer{
+        padding-bottom: 175px;
+    }
     .footer .container{
         flex-wrap: wrap;
         position: relative;
@@ -97,7 +100,9 @@
     }
     .footer .contacts_list a{
         gap: 10px;
+        margin-bottom: 0;
     }
+
     .footer .contacts_list .phone{
         width: 130px;
         padding: 11px 16px;
@@ -121,8 +126,8 @@
     }
     .footer .contacts_list .kontur{
         position: absolute;
-        bottom: -70px;
-        right: 40px;
+        bottom: -95px;
+        justify-content: center;
         font-weight: 300;
         line-height: 20px;
     }
