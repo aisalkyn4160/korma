@@ -47,7 +47,7 @@
 }
 .footer .contacts_list .kontur{
     order: 5;
-    width: 100%;
+    width: 95%;
     justify-content: end;
     color: #AFB7BF;
     font-weight: 300;
@@ -81,6 +81,7 @@
     .footer .container{
         flex-wrap: wrap;
         position: relative;
+        padding: 0 15px;
     }
     .footer .logo{
         width: 100%; 

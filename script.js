@@ -1,13 +1,15 @@
 let header = document.querySelector('.header')
       headerHeight = document.querySelector('.header').clientHeight
-let dropdownDiv = document.querySelector('.dropdown_bg')
+let main = document.querySelector('main')
 console.log(headerHeight);
 document.onscroll = function() {
-    let scrollY = window.scrollY
-    if (scrollY > headerHeight) {
+    let scrollY = window.scrollY 
+       if (scrollY > headerHeight) {
         header.classList.add('scroll_header')
+        main.style.marginTop = `${headerHeight}px`
     } else{
         header.classList.remove('scroll_header')
+        main.style.marginTop = `0px`
     }
 }
 

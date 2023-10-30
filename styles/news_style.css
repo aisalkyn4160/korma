@@ -39,3 +39,7 @@
     color: var(--main-color) !important;
     text-decoration: underline;
 }
+
+article p{
+    font-weight: 400;
+}

@@ -1,4 +1,5 @@
 .header{
+    height: 180px;
     padding: 20px 0px;
     background: #FFF;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.03), 0px 1px 1px 0px rgba(0, 0, 0, 0.05);
@@ -92,15 +93,19 @@
 .contacts_list .whatsapp{
     white-space: nowrap !important;
 }
+
 .header .contacts_list .geo{
     width: 60%;
 }
+
 .header .contacts_list .mail{
-    width: 40%;
+    width: 35%;
 }
+
 .header .contacts_list .whatsapp{
     width: 55%;
 }
+
 .scroll_header{
     width: 100%;
     height: calc(80px + (92 - 80) * (100vw  / 1200));
@@ -112,6 +117,7 @@
     transition: transform 0.5s ease 0s;
     z-index: 20;
 }
+
 .scroll_header .logo{
     display: none;
 }
@@ -188,6 +194,7 @@
     position: absolute;
     background: #FFF;
     top: 185px;
+    left: -100%;
     z-index: -10;
     width: 40%;
     min-width: 284px;
@@ -203,6 +210,7 @@
 }
 .open{
     opacity: 1;
+    left: 10px;
     transition: opacity 0.3s ease 0s;
     z-index: 100;
 }
@@ -249,6 +257,9 @@
 }
 
 @media (max-width: 1040px){
+    .header{
+        height: 80px;
+    }
     .header .container{
         gap: 15px;
     }
